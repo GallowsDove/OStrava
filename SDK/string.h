@@ -179,7 +179,7 @@ int inline strsize(const char* s)
 
 #define strcat(d, s) memcpy(&(d)[strlen((d))], (s), strsize((s)))
 
-char* strstr(const char* s1, const char* s2)
+char* inline strstr(const char* s1, const char* s2)
 {
 	/* do not concat this strlen with memcmp because it would be called in a loop but return value is always const = optimalization */
 	const int l = strlen(s2);

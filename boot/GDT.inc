@@ -1,6 +1,4 @@
 GDT:
-
-SELECTOR_NULL equ ($ - GDT)
 	dq 0
 
 SELECTOR_UNREAL_CODE equ ($ - GDT)
